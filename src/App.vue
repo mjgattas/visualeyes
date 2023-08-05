@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
@@ -12,6 +13,13 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <nav>
+      <router-link to="/visualizer-1">Vis 1</router-link> |
+      <router-link to="/visualizer-2">Vis 2</router-link> |
+      <router-link to="/visualizer-3">Vis 3</router-link>
+    </nav>
+    <router-view />
 </template>
 
 <style scoped>
